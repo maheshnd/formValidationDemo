@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+    <section class="card two-column-form bg-color">
+        <div class="content">
+            <div class="text">
+                <div class="title"><h2>Contact Us</h2></div>
+                <div class="copy">
+                    <form>
+                        <p class="required"><span>*</span> = required</p>
+                        <fieldset>
+                            <div>
+                                <label class="required" data-type="input">
+                                    <span>First Name</span>
+                                    <input type="text" value="" maxlength="100">
+                                </label>
+                                <label data-type="input">
+                                    <span>Last Name</span>
+                                    <input type="text" name="contact:name:last" value="" maxlength="100">
+                                </label>
+                                <label class="required" data-type="input">
+                                    <span>Email</span>
+                                    <input  name="contact:email" value="" maxlength="200" placeholder="user@mydomain.com">
+                                </label>
+                                <label data-type="input">
+                                    <span>Day Phone</span>
+                                    <input type="tel" name="contact:tel" value="" maxlength="" placeholder="(###) ###-####">
+                                </label>
+                                <label class="agreement" data-type="checkbox">
+                                  <span>I agree to x, y and z.</span>
+                                  <input type="checkbox" name="agreement" value="">
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div role="status" aria-hidden="true">
+                        </div>
+
+                        <div>
+                            <button type="submit" name="" id="" data-action="formSubmit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script src="lib/jquery.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

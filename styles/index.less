@@ -1,0 +1,269 @@
+/*
+DO NOT MAKE CHANGES TO THE HTML FILE
+
+1. Refactor the raw CSS into LESS, variablize and condense where possible 
+2. Resolve the contrast issue where dark text on a dark background is,
+   please resolve this so that text has higher readability.
+3. Fix the alignment of the checkbox so that it sits in front of the label text.
+4. Are there any misleading UI elements? What are they, please fix?
+
+DO NOT MAKE CHANGES TO THE HTML FILE
+*/
+body {
+	font-family: "Arial";
+	font-family: "Arial";
+	.card.bg-light {
+		background-color: #ffffff;
+		color: #000000;
+		max-width: 50%;
+		padding: 1.5vw;
+		> .content {
+			.text {
+				color: #000000;
+				form {
+					fieldset {
+						div {
+							display: flex;
+							flex-wrap: wrap;
+							label {
+								flex-grow: 1;
+								width: 48%;
+								margin-right: 2%;
+								display: inline-flex;
+								flex-direction: column;
+								input {
+									padding: 0.5rem;
+									border: 1px solid #333333;
+								}
+								span {
+									line-height: 1.8rem;
+									&::after {
+										content: "*";
+										color: #ff0000;
+										padding-left: 0.2rem;
+									}
+								}
+							}
+							label[type="checkbox"] {
+								flex-direction: row;
+							}
+						}
+					}
+				}
+				button {
+					margin-top: 2rem;
+					width: 100%;
+					max-width: 300px;
+					background-color: #5b9dd9;
+					color: #ffffff;
+					border: 2px solid transparent;
+					cursor: pointer;
+					font-family: "Arial";
+					font-size: 1rem;
+					line-height: 1.5;
+					text-align: center;
+					transition: all 0.5s ease;
+					padding: 16.8px;
+					min-height: 50px;
+					display: inline-block;
+					justify-content: center;
+					letter-spacing: 2px;
+					&:hover {
+						background-color: #ffffff;
+						color: #5b9dd9;
+						border-color: #5b9dd9;
+					}
+				}
+			}
+		}
+	}
+	.card.bg-color {
+		background-color: #333333;
+		color: #555555;
+		max-width: 50%;
+		padding: 1.5vw;
+		> .content {
+			.text {
+				color: #555555;
+				form {
+					fieldset {
+						div {
+							display: flex;
+							flex-wrap: wrap;
+							label {
+								flex-grow: 1;
+								width: 48%;
+								margin-right: 2%;
+								display: inline-flex;
+								flex-direction: column;
+								input {
+									padding: 0.5rem;
+									border: 1px solid #333333;
+								}
+								span {
+									line-height: 1.8rem;
+									&::after {
+										content: "*";
+										color: #ff0000;
+										padding-left: 0.2rem;
+									}
+								}
+							}
+							label[type="checkbox"] {
+								flex-direction: row;
+							}
+						}
+					}
+				}
+				button {
+					margin-top: 2rem;
+					width: 100%;
+					max-width: 300px;
+					background-color: #5b9dd9;
+					color: #ffffff;
+					border: 2px solid transparent;
+					cursor: pointer;
+					font-family: "Arial";
+					font-size: 1rem;
+					line-height: 1.5;
+					text-align: center;
+					transition: all 0.5s ease;
+					padding: 16.8px;
+					min-height: 50px;
+					display: inline-block;
+					justify-content: center;
+					letter-spacing: 2px;
+					&:hover {
+						background-color: #ffffff;
+						color: #5b9dd9;
+						border-color: #5b9dd9;
+					}
+				}
+			}
+		}
+	}
+}
+
+// body {
+// }
+// body .card.bg-light {
+// 	background-color: #ffffff;
+// 	color: #000000;
+// 	max-width: 50%;
+// 	padding: 1.5vw;
+// }
+// body .card.bg-light > .content .text {
+// 	color: #000000;
+// }
+// body .card.bg-light > .content .text form fieldset div {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// body .card.bg-light > .content .text form fieldset div label {
+// 	flex-grow: 1;
+// 	width: 48%;
+// 	margin-right: 2%;
+// 	display: inline-flex;
+// 	flex-direction: column;
+// }
+// body .card.bg-light > .content .text form fieldset div label[type="checkbox"] {
+// 	flex-direction: row;
+// }
+// body .card.bg-light > .content .text form fieldset div label input {
+// 	padding: 0.5rem;
+// 	border: 1px solid #333333;
+// }
+// body .card.bg-light > .content .text form fieldset div label span {
+// 	line-height: 1.8rem;
+// }
+// body .card.bg-light > .content .text form fieldset div label span::after {
+// 	content: "*";
+// 	color: #ff0000;
+// 	padding-left: 0.2rem;
+// }
+// body .card.bg-light > .content .text button {
+// 	margin-top: 2rem;
+// 	width: 100%;
+// 	max-width: 300px;
+// 	background-color: #5b9dd9;
+// 	color: #ffffff;
+// 	border: 2px solid transparent;
+// 	cursor: pointer;
+// 	font-family: "Arial";
+// 	font-size: 1rem;
+// 	line-height: 1.5;
+// 	text-align: center;
+// 	transition: all 0.5s ease;
+// 	padding: 16.8px;
+// 	min-height: 50px;
+// 	display: inline-block;
+// 	justify-content: center;
+// 	letter-spacing: 2px;
+// }
+// body .card.bg-light > .content .text button:hover {
+// 	background-color: #ffffff;
+// 	color: #5b9dd9;
+// 	border-color: #5b9dd9;
+// }
+// body {
+// 	font-family: "Arial";
+// }
+// body .card.bg-color {
+// 	background-color: #333333;
+// 	color: #555555;
+// 	max-width: 50%;
+// 	padding: 1.5vw;
+// }
+// body .card.bg-color > .content .text {
+// 	color: #555555;
+// }
+// body .card.bg-color > .content .text form fieldset div {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// body .card.bg-color > .content .text form fieldset div label {
+// 	flex-grow: 1;
+// 	width: 48%;
+// 	margin-right: 2%;
+// 	display: inline-flex;
+// 	flex-direction: column;
+// }
+// body .card.bg-color > .content .text form fieldset div label[type="checkbox"] {
+// 	flex-direction: row;
+// }
+// body .card.bg-color > .content .text form fieldset div label input {
+// 	padding: 0.5rem;
+// 	border: 1px solid #333333;
+// }
+// body .card.bg-color > .content .text form fieldset div label span {
+// 	line-height: 1.8rem;
+// }
+// body .card.bg-color > .content .text form fieldset div label span::after {
+// 	content: "*";
+// 	color: #ff0000;
+// 	padding-left: 0.2rem;
+// }
+// body .card.bg-color > .content .text button {
+// 	margin-top: 2rem;
+// 	width: 100%;
+// 	max-width: 300px;
+// 	background-color: #5b9dd9;
+// 	color: #ffffff;
+// 	border: 2px solid transparent;
+// 	cursor: pointer;
+// 	font-family: "Arial";
+// 	font-size: 1rem;
+// 	line-height: 1.5;
+// 	text-align: center;
+// 	transition: all 0.5s ease;
+// 	padding: 16.8px;
+// 	min-height: 50px;
+// 	display: inline-block;
+// 	justify-content: center;
+// 	letter-spacing: 2px;
+// }
+// body .card.bg-color > .content .text button:hover {
+// 	background-color: #ffffff;
+// 	color: #5b9dd9;
+// 	border-color: #5b9dd9;
+// }
